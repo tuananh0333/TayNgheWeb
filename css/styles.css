@@ -1,0 +1,212 @@
+/* Header's Navigation */
+.header-navbar {
+    z-index: 10;
+    padding-top: 20px;padding-bottom: 20px;
+    top: 0;right: 0;left: 0;
+    background: #fff;
+    position: fixed;
+
+    box-shadow: 4px 1px 5px grey;
+}
+    
+/* links on navigation */
+.header-navbar .active a {color: #F15F32;}
+.header-navbar a{position: relative;font-size: 0.75rem;margin-left: 15px;font-weight: 700;}
+.header-navbar a:hover {color: #F15F32;}
+.header-navbar a::after {
+    content: "";
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    border-bottom: 2px solid #F15F32;
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.header-navbar a:hover::after {transform: scaleX(1);}
+
+/* Toggle */
+.header-navbar .navbar-toggler {background: #F15F32;}
+
+/* Logo */
+.header-navbar .logo:hover {color: #F15F32;}
+.header-navbar .logo:hover::after {color: #45403D;}
+
+.logo {
+    position: relative;
+    top: -10px; 
+    left: 41px; 
+    letter-spacing: -0.08em;
+    font-size: 1.875rem !important; 
+    font-weight: 700 !important;}
+.logo::before {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: -12px;
+    left: -55px;
+    content: '\f0eb';
+    color: #F15F32;
+    font-size: 2em;
+}
+.logo::after {
+    position: absolute;
+    content: 'TUOI TRE SANG TAO' !important;
+    border: none !important;
+    letter-spacing: 0.13em;
+    opacity: 0.6;
+    bottom: -8px !important;
+    left: 0px;
+    top: auto !important;
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+/* search */
+.search-feld {
+    padding: 1px;
+    font-size: 0.75rem;
+    margin-left: 20px;
+    border: 2px solid #F15F32;
+    background: #f4f4f3;
+    border-radius: 20px;
+}
+.search-feld:hover {background: #F15F32;}
+
+.btn-search {transition: color 0.05s linear;}
+.search-feld:hover .btn-search {color: #fff;}
+.search-feld:hover .edt-search {color: #fff;}
+.edt-search {
+    color: #45403D;
+    border: none;
+    background: none;
+    width: 90px;
+}
+/* ================ ================ ================ */
+
+body {margin-top: 100px;}
+.carousel-inner {
+    height: 650px;
+    overflow: hidden;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.news {
+    margin-top: 50px;
+    text-align: center;
+}
+.news>h1 {
+    padding: 20px;
+    position: relative;
+    margin: 80px;
+    transition: 0.75s ease;
+}
+.news>h1::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0; bottom: 0;left: 0; right: 0;
+    border-radius: 50px;
+    background:  #F15F32;
+    transform: scaleX(0);
+    transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.news>h1:hover::after {
+    transform: scaleX(1);
+}
+.news>h1:hover {
+    color: #fff;
+}
+.news .avatar {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #F15F32;
+}
+.news .avatar-main {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 400px;
+    background: #F15F32;
+}
+
+.news .noidung-main {
+    text-align: justify;
+}
+.news .ngaydang {
+    color: #F15F32;
+}
+
+.news article {
+    padding: 15px;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.news article:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.news a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* --- FOOTER --- */
+footer {background: #292724; margin-top: 80px;}
+.web-info {padding-top: 100px; padding-bottom: 60px;border-bottom: 1px dotted #b2afad;}
+.web-info .logo {margin-left: 15px; color: #fff;}
+.web-info .logo::after {color: #e6e4e2;}
+.web-info .logo::before {color: #fff;}
+
+.web-info h5 {
+    font-size: 1.525rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.web-info .about {
+    margin-top: 30px;
+    color: #b2afad;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.colmn {padding: 0px 30px 0px 160px;}
+.colmn ul {
+    list-style: none;
+    orientation: portrait;
+    font-size: 0.95em;
+    padding: 0;
+    margin-top: 30px;
+}
+.colmn ul li a {text-decoration: none;color: #585754;}
+.colmn a i {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    color: #fff;
+}
+
+.copyr {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    color: #b2afad;
+}
+
+.gotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    text-align: center;
+    padding-top: 14px;
+    color: #fff;
+
+    width: 50px;
+    height: 50px;
+    background: #F15F32;
+}
