@@ -11,8 +11,8 @@
     
 /* links on navigation */
 .header-navbar .active a {color: #F15F32;}
-.header-navbar a{position: relative;font-size: 0.75rem;margin-left: 15px;font-weight: 700;}
-.header-navbar a:hover {color: #F15F32;}
+.header-navbar a{position: relative ;font-size: 0.75rem;margin-left: 15px;font-weight: 700;}
+.header-navbar a:hover {color: #F15F32 !important;}
 .header-navbar a::after {
     content: "";
     position: absolute;
@@ -68,9 +68,8 @@
     background: #f4f4f3;
     border-radius: 20px;
 }
-.search-feld:hover {background: #F15F32;}
-
 .btn-search {transition: color 0.05s linear;}
+.search-feld:hover {background: #F15F32;}
 .search-feld:hover .btn-search {color: #fff;}
 .search-feld:hover .edt-search {color: #fff;}
 .edt-search {
@@ -111,12 +110,8 @@ body {margin-top: 100px;}
     transform: scaleX(0);
     transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.news>h1:hover::after {
-    transform: scaleX(1);
-}
-.news>h1:hover {
-    color: #fff;
-}
+.news>h1:hover::after {transform: scaleX(1);}
+.news>h1:hover {color: #fff;}
 .news .avatar {
     position: relative;
     margin: 0 auto;
@@ -135,12 +130,8 @@ body {margin-top: 100px;}
     background: #F15F32;
 }
 
-.news .noidung-main {
-    text-align: justify;
-}
-.news .ngaydang {
-    color: #F15F32;
-}
+.news .noidung-main {text-align: justify;}
+.news .ngaydang {color: #F15F32;}
 
 .news article {
     padding: 15px;
@@ -151,10 +142,7 @@ body {margin-top: 100px;}
     transform: scale(1.1);
 }
 
-.news a {
-    text-decoration: none;
-    color: #000;
-}
+.news a {text-decoration: none;color: #000;}
 
 /* --- FOOTER --- */
 footer {background: #292724; margin-top: 80px;}
