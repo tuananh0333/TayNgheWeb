@@ -1,3 +1,10 @@
+<?php
+    include_once './models/posts.php';
+
+    $posts = new Posts;
+    echo($posts->getListPost());
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
